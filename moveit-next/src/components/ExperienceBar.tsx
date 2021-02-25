@@ -1,9 +1,9 @@
 import { useContext } from 'react';
-import { ChallengeContext } from '../contexts/ChallengeContext';
+import { ChallengesContext } from '../contexts/ChallengesContext';
 import  '../styles/components/ExperienceBar.module.css';
 
 export function ExperienceBar() {
-  const { currentExperience, experienceToNextLevel } = useContext(ChallengeContext);
+  const { currentExperience, experienceToNextLevel } = useContext(ChallengesContext);
 
   const percentToNxtLevel = Math.round(currentExperience * 100 / experienceToNextLevel);
 
